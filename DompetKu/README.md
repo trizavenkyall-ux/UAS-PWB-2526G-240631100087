@@ -3,9 +3,11 @@
 ![PHP](https://img.shields.io/badge/PHP-7.4+-blue)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)
-![Status](https://img.shields.io/badge/Status-Selesai-brightgreen)
+![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
 
-## 📌 Identitas
+---
+
+# 📌 Identitas
 
 **Nama** : Triza Venky Alqianza  
 **NIM** : 240631100087
@@ -14,55 +16,74 @@
 
 # 📖 Deskripsi Aplikasi
 
-DompetKu merupakan aplikasi berbasis web yang dikembangkan menggunakan PHP Native dan MySQL sebagai media pencatatan keuangan pribadi. Aplikasi ini dirancang untuk membantu pengguna dalam mengelola transaksi pemasukan dan pengeluaran secara sederhana.
+DompetKu merupakan aplikasi berbasis web yang dikembangkan menggunakan **PHP Native** dan **MySQL** sebagai media pencatatan keuangan pribadi. Aplikasi ini dirancang untuk membantu pengguna dalam mengelola transaksi pemasukan dan pengeluaran secara sederhana, cepat, dan terstruktur.
 
-Melalui aplikasi ini, pengguna dapat menambahkan, mengubah, menghapus, serta mencari data transaksi dengan mudah. Selain itu, sistem akan menghitung total pemasukan, total pengeluaran, serta saldo secara otomatis sehingga pengguna dapat mengetahui kondisi keuangannya secara real-time.
+Melalui aplikasi ini, pengguna dapat menambahkan, mengubah, menghapus, serta mencari data transaksi dengan mudah. Selain itu, sistem akan menghitung total pemasukan, total pengeluaran, serta saldo secara otomatis sehingga pengguna dapat memantau kondisi keuangannya secara real-time.
+
+Aplikasi ini dibuat sebagai implementasi pembelajaran mata kuliah **Pemrograman Web**, khususnya dalam penerapan konsep **CRUD (Create, Read, Update, Delete)** menggunakan bahasa pemrograman PHP Native dan database MySQL.
 
 ---
 
-# 🎯 Tujuan Pembuatan
+# 🎯 Tujuan Pengembangan
 
-Tujuan dari pengembangan aplikasi DompetKu adalah:
+Tujuan pengembangan aplikasi DompetKu adalah:
 
-- Membantu pengguna mencatat transaksi keuangan harian.
-- Mempermudah pengelolaan pemasukan dan pengeluaran.
+- Membantu pengguna mencatat pemasukan dan pengeluaran harian.
+- Mempermudah pengelolaan keuangan pribadi.
 - Menampilkan informasi saldo secara otomatis.
-- Menerapkan konsep CRUD menggunakan PHP Native dan MySQL.
-- Sebagai implementasi pembelajaran pemrograman web.
+- Mengimplementasikan operasi CRUD menggunakan PHP dan MySQL.
+- Menerapkan konsep pengembangan aplikasi berbasis web sederhana.
 
 ---
 
 # ✨ Fitur Aplikasi
 
-Aplikasi DompetKu memiliki beberapa fitur utama, yaitu:
+DompetKu menyediakan beberapa fitur utama, yaitu:
 
 - Dashboard transaksi
 - Menampilkan total pemasukan
 - Menampilkan total pengeluaran
-- Menampilkan saldo otomatis
+- Menampilkan total saldo
 - Menampilkan jumlah transaksi
 - Menambahkan transaksi baru
 - Mengubah data transaksi
-- Menghapus transaksi
+- Menghapus data transaksi
 - Pencarian transaksi berdasarkan kategori, jenis, maupun keterangan
-- Validasi nominal transaksi
+- Validasi data sebelum disimpan ke database
 
 ---
 
-# 🖼️ Tampilan Aplikasi
+# 🖥️ Tampilan Aplikasi
 
-Simpan gambar pada folder berikut:
+Aplikasi DompetKu terdiri dari beberapa halaman utama yang saling terhubung untuk memudahkan pengguna dalam mengelola data transaksi keuangan.
 
-```
-screenshots/
-```
+## 1. Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+Dashboard merupakan halaman utama yang pertama kali ditampilkan ketika aplikasi dijalankan. Halaman ini menyajikan informasi ringkasan keuangan berupa total pemasukan, total pengeluaran, saldo saat ini, jumlah transaksi, serta tabel daftar transaksi yang telah tersimpan pada database. Selain itu, dashboard juga menyediakan fitur pencarian transaksi serta tombol untuk menambahkan data transaksi baru.
 
-![Tambah Transaksi](screenshots/tambah.png)
+---
 
-![Edit Transaksi](screenshots/edit.png)
-```
+## 2. Halaman Tambah Transaksi
+
+Halaman tambah transaksi digunakan untuk memasukkan data transaksi baru ke dalam sistem. Pada halaman ini pengguna diminta mengisi beberapa informasi seperti tanggal transaksi, jenis transaksi, kategori, keterangan, dan nominal transaksi. Setelah seluruh data diisi dengan benar, data akan disimpan ke database dan otomatis ditampilkan pada dashboard.
+
+---
+
+## 3. Halaman Edit Transaksi
+
+Halaman edit transaksi digunakan untuk memperbarui data transaksi yang telah tersimpan sebelumnya. Pengguna dapat mengubah informasi transaksi sesuai kebutuhan, kemudian menyimpan perubahan sehingga data pada dashboard ikut diperbarui secara otomatis.
+
+---
+
+## 4. Proses Hapus Transaksi
+
+Fitur hapus transaksi memungkinkan pengguna menghapus data transaksi yang sudah tidak diperlukan. Sebelum proses penghapusan dilakukan, sistem akan menampilkan konfirmasi sehingga pengguna tidak menghapus data secara tidak sengaja.
+
+---
+
+## 5. Pencarian Data
+
+Aplikasi menyediakan fasilitas pencarian transaksi berdasarkan kategori, jenis transaksi, maupun keterangan. Fitur ini memudahkan pengguna menemukan data tertentu tanpa harus mencari secara manual pada seluruh daftar transaksi.
 
 ---
 
@@ -74,7 +95,7 @@ screenshots/
 db_keuangan
 ```
 
-### Tabel transaksi
+## Tabel transaksi
 
 | Field | Tipe Data | Keterangan |
 |--------|-----------|------------|
@@ -83,7 +104,7 @@ db_keuangan
 | jenis | ENUM('Pemasukan','Pengeluaran') | Jenis transaksi |
 | kategori | VARCHAR(100) | Kategori transaksi |
 | keterangan | VARCHAR(255) | Deskripsi transaksi |
-| nominal | DECIMAL(12,2) | Nominal transaksi |
+| nominal | DECIMAL(12,2) | Jumlah uang |
 
 ---
 
@@ -94,11 +115,6 @@ dompetku/
 │
 ├── css/
 │   └── style.css
-│
-├── screenshots/
-│   ├── dashboard.png
-│   ├── tambah.png
-│   └── edit.png
 │
 ├── index.php
 ├── tambah.php
@@ -120,27 +136,27 @@ dompetku/
 
 Tahap pertama yang dilakukan adalah menyiapkan perangkat lunak pendukung berupa **XAMPP** sebagai web server lokal. XAMPP digunakan karena telah menyediakan layanan Apache dan MySQL yang diperlukan untuk menjalankan aplikasi berbasis PHP.
 
-Setelah proses instalasi selesai, layanan **Apache** dan **MySQL** dijalankan melalui XAMPP Control Panel agar aplikasi dapat diakses melalui browser.
+Setelah proses instalasi selesai, layanan Apache dan MySQL dijalankan melalui XAMPP Control Panel agar aplikasi dapat diakses melalui browser.
 
 ---
 
 ## 2. Penempatan File Project
 
-Selanjutnya, seluruh folder project **DompetKu** ditempatkan pada direktori utama web server, yaitu folder **htdocs**.
+Selanjutnya, seluruh folder project **DompetKu** ditempatkan pada direktori utama web server yaitu folder **htdocs**.
 
-Struktur penyimpanannya adalah sebagai berikut:
+Struktur penyimpanannya sebagai berikut.
 
 ```
 htdocs/dompetku
 ```
 
-Dengan penempatan tersebut, aplikasi dapat dijalankan menggunakan localhost.
+Dengan penempatan tersebut aplikasi dapat dijalankan menggunakan localhost.
 
 ---
 
 ## 3. Pembuatan Database
 
-Setelah project ditempatkan pada folder web server, langkah berikutnya adalah membuat database melalui phpMyAdmin.
+Setelah project berhasil ditempatkan pada folder web server, langkah berikutnya adalah membuat database melalui phpMyAdmin.
 
 Database dibuat dengan nama:
 
@@ -148,7 +164,7 @@ Database dibuat dengan nama:
 db_keuangan
 ```
 
-Selanjutnya dilakukan proses import terhadap file **database.sql** yang telah disediakan. File tersebut berisi struktur tabel beserta data awal sehingga seluruh kebutuhan database dapat terbentuk secara otomatis.
+Selanjutnya dilakukan proses import terhadap file **database.sql** yang telah disediakan sehingga seluruh tabel beserta struktur database dapat terbentuk secara otomatis.
 
 ---
 
@@ -156,21 +172,19 @@ Selanjutnya dilakukan proses import terhadap file **database.sql** yang telah di
 
 Setelah proses import selesai, dilakukan konfigurasi koneksi database melalui file **koneksi.php**.
 
-Parameter koneksi disesuaikan dengan konfigurasi server lokal yang digunakan, yaitu host localhost, username root, password sesuai konfigurasi MySQL, dan nama database **db_keuangan**.
-
-Konfigurasi ini bertujuan agar aplikasi dapat terhubung dengan database tanpa mengalami kesalahan koneksi.
+Konfigurasi meliputi host, username, password, serta nama database yang digunakan sehingga aplikasi dapat terhubung dengan database tanpa mengalami kesalahan koneksi.
 
 ---
 
 ## 5. Menjalankan Aplikasi
 
-Setelah seluruh konfigurasi selesai dilakukan, aplikasi dijalankan melalui browser dengan mengakses alamat:
+Setelah seluruh proses konfigurasi selesai dilakukan, aplikasi dijalankan melalui browser dengan mengakses alamat:
 
 ```
 http://localhost/dompetku/
 ```
 
-Apabila seluruh tahapan instalasi telah dilakukan dengan benar, maka halaman Dashboard aplikasi akan ditampilkan dan seluruh fitur dapat digunakan.
+Apabila seluruh tahapan telah dilakukan dengan benar maka halaman Dashboard aplikasi akan ditampilkan dan seluruh fitur siap digunakan.
 
 ---
 
@@ -184,13 +198,17 @@ Pengujian dilakukan dengan cara:
 - Mengubah data transaksi.
 - Menghapus transaksi.
 - Melakukan pencarian transaksi.
-- Memastikan total pemasukan, pengeluaran, dan saldo dihitung secara otomatis.
+- Memastikan perhitungan total pemasukan.
+- Memastikan perhitungan total pengeluaran.
+- Memastikan saldo dihitung secara otomatis.
 
-Hasil pengujian menunjukkan bahwa seluruh fitur pada aplikasi dapat berjalan dengan baik sesuai dengan kebutuhan sistem.
+Berdasarkan hasil pengujian, seluruh fitur aplikasi berjalan dengan baik sesuai kebutuhan sistem.
 
 ---
 
 # 💻 Teknologi yang Digunakan
+
+Aplikasi ini dibangun menggunakan teknologi sebagai berikut.
 
 - PHP Native
 - MySQL
@@ -206,26 +224,28 @@ Hasil pengujian menunjukkan bahwa seluruh fitur pada aplikasi dapat berjalan den
 # 🔄 Alur Penggunaan Aplikasi
 
 1. Pengguna membuka halaman Dashboard.
-2. Pengguna menambahkan transaksi baru.
-3. Data disimpan ke database.
-4. Dashboard menampilkan data terbaru.
-5. Pengguna dapat mengubah maupun menghapus transaksi.
-6. Sistem menghitung saldo secara otomatis.
+2. Pengguna memilih menu Tambah Transaksi.
+3. Pengguna mengisi data transaksi.
+4. Data disimpan ke database.
+5. Dashboard akan diperbarui secara otomatis.
+6. Pengguna dapat mengubah maupun menghapus transaksi.
+7. Sistem akan menghitung saldo berdasarkan seluruh transaksi yang tersimpan.
 
 ---
 
 # 🚀 Pengembangan Selanjutnya
 
-Beberapa fitur yang masih dapat dikembangkan pada aplikasi ini antara lain:
+Pengembangan yang dapat dilakukan pada aplikasi DompetKu di masa mendatang antara lain:
 
-- Login multi-user
-- Grafik pemasukan dan pengeluaran
-- Export PDF
-- Export Excel
-- Filter transaksi berdasarkan tanggal
-- Laporan bulanan
-- Backup database otomatis
+- Sistem Login Multi User
+- Dashboard Grafik Keuangan
+- Export Data ke PDF
+- Export Data ke Excel
+- Filter Transaksi Berdasarkan Tanggal
+- Laporan Bulanan
+- Backup Database
 - Dark Mode
+- Responsive Mobile yang lebih optimal
 
 ---
 
@@ -235,13 +255,15 @@ Beberapa fitur yang masih dapat dikembangkan pada aplikasi ini antara lain:
 
 NIM : **240631100087**
 
+Program Studi Sistem Informasi
+
 Universitas Trunojoyo Madura
 
 ---
 
 # 📄 Lisensi
 
-Aplikasi ini dibuat sebagai media pembelajaran dan penyelesaian tugas mata kuliah Pemrograman Web.
+Aplikasi **DompetKu** dikembangkan sebagai media pembelajaran pada mata kuliah Pemrograman Web. Seluruh source code pada project ini dapat digunakan untuk keperluan pembelajaran dan pengembangan lebih lanjut dengan tetap mencantumkan identitas pembuat.
 
 ---
 
