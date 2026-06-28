@@ -254,6 +254,13 @@ Program Studi Sistem Informasi
 Universitas Trunojoyo Madura
 
 ---
+🤖 Pernyataan Penggunaan Generative AI (GenAI)
+Sesuai dengan regulasi kejujuran akademik yang ditentukan pada lembar instruksi UAS, proyek aplikasi KasKita ini dikembangkan dengan memanfaatkan bantuan asisten kecerdasan artifisial (GenAI). Pemanfaatan perangkat pintar tersebut diterapkan pada bagian:
+
+Perancangan skema tata letak arsitektur CSS eksternal agar antarmuka responsif dan estetis.
+Optimasi sanitasi fungsi PHP untuk pencegahan celah keamanan SQL Injection dasar.
+Penyusunan format dokumentasi teks markdown ini.
+Pernyataan penggunaan teknologi kecerdasan buatan ini juga dijabarkan dan diulas secara transparan dalam video presentasi proyek pada tautan YouTube yang dikumpulkan.
 
 # 📄 Lisensi
 
