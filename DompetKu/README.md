@@ -57,9 +57,6 @@ Simpan gambar pada folder berikut:
 screenshots/
 ```
 
-Contoh:
-
-```markdown
 ![Dashboard](screenshots/dashboard.png)
 
 ![Tambah Transaksi](screenshots/tambah.png)
