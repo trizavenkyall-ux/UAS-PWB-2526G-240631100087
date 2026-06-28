@@ -267,12 +267,24 @@ Aplikasi **DompetKu** dikembangkan sebagai media pembelajaran pada mata kuliah P
 
 ---
 
-🤖 Pernyataan Penggunaan Generative AI (GenAI)
-Sesuai dengan regulasi kejujuran akademik yang ditentukan pada lembar instruksi UAS, proyek aplikasi DompetKu ini dikembangkan dengan memanfaatkan bantuan asisten kecerdasan artifisial (GenAI). Pemanfaatan perangkat pintar tersebut diterapkan pada bagian:
+---
 
-Perancangan skema tata letak arsitektur CSS eksternal agar antarmuka responsif dan estetis.
-Optimasi sanitasi fungsi PHP untuk pencegahan celah keamanan SQL Injection dasar.
-Penyusunan format dokumentasi teks markdown ini.
-Pernyataan penggunaan teknologi kecerdasan buatan ini juga dijabarkan dan diulas secara transparan dalam video presentasi proyek pada tautan YouTube yang dikumpulkan.
+# 🤖 Pernyataan Penggunaan Generative AI (GenAI)
+
+Sesuai dengan ketentuan kejujuran akademik yang berlaku pada pelaksanaan Ujian Akhir Semester (UAS), pengembangan aplikasi **DompetKu** dilakukan dengan memanfaatkan bantuan **Generative Artificial Intelligence (GenAI)** sebagai alat bantu dalam proses pengembangan. Penggunaan GenAI tidak menggantikan proses perancangan maupun implementasi oleh pengembang, melainkan digunakan untuk meningkatkan efisiensi dalam penyusunan kode dan dokumentasi.
+
+Pemanfaatan GenAI pada proyek ini meliputi beberapa aspek berikut:
+
+- Memberikan referensi dalam perancangan tata letak antarmuka (UI) menggunakan HTML, CSS, dan Bootstrap agar tampilan aplikasi lebih responsif dan mudah digunakan.
+- Membantu memberikan saran dalam penyusunan logika program menggunakan PHP Native dan MySQL, termasuk implementasi operasi CRUD (Create, Read, Update, Delete).
+- Memberikan rekomendasi terkait validasi input serta sanitasi data untuk mengurangi potensi kesalahan dan meningkatkan keamanan dasar aplikasi.
+- Membantu penyusunan struktur dokumentasi proyek dalam format Markdown (`README.md`) agar lebih sistematis dan mudah dipahami.
+- Memberikan masukan dalam proses perbaikan (debugging) ketika ditemukan kesalahan pada implementasi program selama proses pengembangan.
+
+Seluruh proses analisis kebutuhan, perancangan sistem, implementasi aplikasi, pengujian, serta penyesuaian hasil akhir tetap dilakukan secara mandiri oleh pengembang. Pemanfaatan GenAI hanya digunakan sebagai media pendukung dalam proses pengembangan perangkat lunak.
+
+Sebagai bentuk transparansi akademik, penggunaan teknologi Generative AI pada proyek ini juga dijelaskan secara terbuka dalam video presentasi yang disertakan pada pengumpulan tugas Ujian Akhir Semester.
+
+---
 
 © 2026 Triza Venky Alqianza. All Rights Reserved.
