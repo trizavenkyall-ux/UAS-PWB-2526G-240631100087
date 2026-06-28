@@ -267,8 +267,6 @@ Aplikasi **DompetKu** dikembangkan sebagai media pembelajaran pada mata kuliah P
 
 ---
 
----
-
 # 🤖 Pernyataan Penggunaan Generative AI (GenAI)
 
 Sesuai dengan ketentuan kejujuran akademik yang berlaku pada pelaksanaan Ujian Akhir Semester (UAS), pengembangan aplikasi **DompetKu** dilakukan dengan memanfaatkan bantuan **Generative Artificial Intelligence (GenAI)** sebagai alat bantu dalam proses pengembangan. Penggunaan GenAI tidak menggantikan proses perancangan maupun implementasi oleh pengembang, melainkan digunakan untuk meningkatkan efisiensi dalam penyusunan kode dan dokumentasi.
