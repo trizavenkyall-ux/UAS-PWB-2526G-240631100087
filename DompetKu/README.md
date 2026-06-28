@@ -1,5 +1,4 @@
 # 💜 DompetKu — Sistem Catatan Keuangan Sederhana
-
 ---
 
 # 📌 Identitas
