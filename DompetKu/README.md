@@ -1,4 +1,10 @@
 # 💜 DompetKu — Sistem Catatan Keuangan Sederhana
+
+![PHP](https://img.shields.io/badge/PHP-7.4+-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)
+![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
+
 ---
 
 # 📌 Identitas
